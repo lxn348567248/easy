@@ -1,0 +1,2 @@
+include ':app', ':libcore', ':libframework'
+rootProject.name='easy'
