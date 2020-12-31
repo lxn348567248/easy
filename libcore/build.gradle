@@ -10,6 +10,19 @@ android {
         versionName "1.0"
     }
 
+    flavorDimensions "version"
+    productFlavors {
+        dev {
+            dimension "version"
+            minSdkVersion 21
+        }
+
+        prod {
+            dimension "version"
+            minSdkVersion BUILD_VERSIONS.MIN_SDK
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false

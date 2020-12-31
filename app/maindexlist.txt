@@ -1,0 +1,3 @@
+me/liuning/easy/MainActivity.class
+me/liuning/easy/BuildConfig.class
+me/liuning/easy/application/BaseApplication.class
