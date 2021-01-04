@@ -34,8 +34,18 @@ public class MainActivity extends SkinActivity {
 
     }
 
-    @OnClick({R.id.id_main_test})
+    @OnClick({R.id.id_main_test, R.id.id_main_start_test})
     public void onClick(View view) {
-        Toast.makeText(this, "显示", Toast.LENGTH_SHORT).show();
+        switch (view.getId()) {
+            case R.id.id_main_test:
+                Toast.makeText(this, "显示", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.id_main_start_test:
+                start(TestActivity.class);
+                break;
+            default:
+                break;
+        }
     }
+
 }
