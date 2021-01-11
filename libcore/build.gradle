@@ -34,9 +34,5 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    compat.forEach { k, v ->
-        implementation v
-    }
-
-
+    COMPAT.forEach { k, v -> implementation v }
 }

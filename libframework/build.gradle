@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "30.0.2"
+    compileSdkVersion BUILD_VERSIONS.COMPILE_SDK
+    buildToolsVersion BUILD_VERSIONS.BUILD_TOOLS
 
 
     compileSdkVersion BUILD_VERSIONS.COMPILE_SDK
@@ -40,5 +40,5 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     api project(":libcore")
-    compat.forEach { k, v -> implementation v }
+    COMPAT.forEach { k, v -> implementation v }
 }

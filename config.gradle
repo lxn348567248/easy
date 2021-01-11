@@ -8,8 +8,8 @@ BUILD_VERSIONS.BUILD_TOOLS = "30.0.2"
 ext.BUILD_VERSIONS = BUILD_VERSIONS
 
 //compat
-def compat = [:]
-compat.appcompat = 'androidx.appcompat:appcompat:1.0.2'
-compat.constraint = 'androidx.constraintlayout:constraintlayout:1.1.3'
+def COMPAT = [:]
+COMPAT.APPCOMPAT = 'androidx.appcompat:appcompat:1.0.2'
+COMPAT.CONSTRAINT = 'androidx.constraintlayout:constraintlayout:1.1.3'
 
-ext.compat = compat
+ext.COMPAT = COMPAT
