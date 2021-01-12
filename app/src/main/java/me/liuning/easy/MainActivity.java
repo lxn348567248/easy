@@ -2,6 +2,7 @@ package me.liuning.easy;
 
 
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -10,6 +11,7 @@ import me.liuning.core.dialog.BaseDialog;
 import me.liuning.core.ioc.annotation.OnClick;
 import me.liuning.core.ioc.annotation.ViewBind;
 import me.liuning.framework.ui.SkinActivity;
+import me.liuning.framework.ui.navigationbar.DefaultNavigationBar;
 
 public class MainActivity extends SkinActivity {
 
@@ -23,7 +25,10 @@ public class MainActivity extends SkinActivity {
 
     @Override
     protected void initTitle() {
-
+        DefaultNavigationBar navigationBar = new
+                DefaultNavigationBar.Builder(this)
+                .setTitle("投稿")
+                .build();
     }
 
     @Override
