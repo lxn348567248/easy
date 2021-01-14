@@ -35,4 +35,5 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     COMPAT.forEach { k, v -> implementation v }
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
 }
